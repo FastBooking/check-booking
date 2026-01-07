@@ -12,7 +12,7 @@ document.getElementById('queryForm').addEventListener('submit', async function(e
     try {
         const recaptchaToken = await grecaptcha.execute('6LegcUEsAAAAAJeTDvIPSziY4RRM91OPJ83LmlJo', {action: 'submit'});
 
-        const response = await fetch('https://hm6626.app.n8n.cloud/webhook/check-booking', {
+        const response = await fetch('https://fastbooking.app.n8n.cloud/webhook/check-booking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -199,7 +199,7 @@ async function cancelBooking(phone, bookingCode, birthYear) {
     }
     
     try {
-        const response = await fetch('https://hm6626.app.n8n.cloud/webhook/cancel-booking', {
+        const response = await fetch('https://fastbooking.app.n8n.cloud/webhook/cancel-booking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
