@@ -161,7 +161,7 @@ function modifyBooking(appointment) {
     const bookingUrl = `https://fastbooking.github.io/booking/?${params.toString()}`;
     
 
-    window.open(bookingUrl, '_blank');
+    window.open(bookingUrl, '_self');
 }
 
 async function cancelBooking(phone, bookingCode, birthYear) {
