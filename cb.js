@@ -158,7 +158,7 @@ function modifyBooking(appointment) {
     if (appointment.預約碼) params.append('預約碼', appointment.預約碼);
 
 
-    const bookingUrl = `https://fastbooking.github.io/booking/?${params.toString()}`;
+    const bookingUrl = `https://app.n8nbooking.com/?${params.toString()}`;
     
 
     window.open(bookingUrl, '_self');
